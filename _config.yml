@@ -11,7 +11,7 @@ footer: yes
 footer_url: "https://github.com/hany606"
 footer_text: "Template designed by Ankit Sultana and edited by Hany Hamed"
 
-remote_theme: hany606/hany606.github.io
+# remote_theme: hany606/hany606.github.io
 
 
 sass:
