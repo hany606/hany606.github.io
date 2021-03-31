@@ -1,4 +1,4 @@
-title: Researcher
+title: Hany Hamed
 url: "https://hany606.github.io/"
 baseurl: "/"
 
@@ -20,7 +20,7 @@ sass:
 
 nav:
  - name: "About"
-   link: "/researcher/"
+   link: "/"
  - name: "Resume"
    link: "resume.pdf"
  - name: "Contact"

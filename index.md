@@ -10,13 +10,13 @@ layout: default
 
 Originally, I am from Egypt 🇪🇬 and currently I am located in [Innopolis, Russia](https://innopolis.com/en/) to study my bachelor degree.
 
-<img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/pdf.svg" width="20" title="PDF" />&nbsp; &nbsp; CV: [PDF](https://drive.google.com/file/d/1jCVdzSeKpFmIbUnwPJ15etRjJpP82kGy/view?usp=sharing)
+<img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/pdf.svg" title="PDF" />&nbsp; &nbsp; CV: [PDF](https://drive.google.com/file/d/1jCVdzSeKpFmIbUnwPJ15etRjJpP82kGy/view?usp=sharing)
 
-<img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/github.svg" width="20" title="Github" />&nbsp; &nbsp; GitHub: [@hany606](https://github.com/hany606)
+<img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/github.svg" title="Github" />&nbsp; &nbsp; GitHub: [@hany606](https://github.com/hany606)
 
-<img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/google_scholar.svg" width="20" title="Google Scholar" />&nbsp; &nbsp; Google Scholar: [Hany Hamed](https://scholar.google.com/citations?user=J5ogYwsAAAAJ&hl=en)
+<img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/google_scholar.svg" title="Google Scholar" />&nbsp; &nbsp; Google Scholar: [Hany Hamed](https://scholar.google.com/citations?user=J5ogYwsAAAAJ&hl=en)
 
-<img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/linkedin.svg" width="20" title="LinkedIn" />&nbsp; &nbsp; LinkedIn: [LinkedIn](https://www.linkedin.com/in/hany-hamed-elanwar/)
+<img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/linkedin.svg" title="LinkedIn" />&nbsp; &nbsp; LinkedIn: [LinkedIn](https://www.linkedin.com/in/hany-hamed-elanwar/)
 
 
 
