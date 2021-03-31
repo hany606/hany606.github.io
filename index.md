@@ -6,11 +6,11 @@ layout: default
 
 <img class="img-icon" class="profile-picture" src="avatar.jpg" width="200px">
 
-**Hello!** :wave: My name is Hany Hamed. I am a 3rd-year Computer Science (Robotics track) bachelor student at [Innopolis University](https://innopolis.university/en/).
+**Hello!** My name is Hany Hamed. I am a 3rd-year Computer Science (Robotics track) bachelor student at [Innopolis University](https://innopolis.university/en/).
 
 Originally, I am from Egypt 🇪🇬 and currently I am located in [Innopolis, Russia](https://innopolis.com/en/) to study my bachelor degree.
 
-<img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/pdf.svg" title="PDF" />&nbsp; &nbsp; CV: [PDF](https://drive.google.com/file/d/1jCVdzSeKpFmIbUnwPJ15etRjJpP82kGy/view?usp=sharing)
+<!-- <img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/pdf.svg" title="PDF" />&nbsp; &nbsp; CV: [PDF](https://drive.google.com/file/d/1jCVdzSeKpFmIbUnwPJ15etRjJpP82kGy/view?usp=sharing) -->
 
 <img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/github.svg" title="Github" />&nbsp; &nbsp; GitHub: [@hany606](https://github.com/hany606)
 
@@ -26,7 +26,7 @@ At the current moment, I am interested in:
 * Multi-robotic system
 * Sim2Real
 
-I am interested in developing a systme of multiple robots that able to learn some behaviors in order to perform some tasks using learning-based methods, moroever, I am interested in transfering the learnt policy for the robots to the real world
+I am interested in developing a system of multiple robots that able to learn some behaviors in order to perform some tasks using learning-based methods, moroever, I am interested in transfering the learnt policy for the robots to the real world.
 
 I am curious to find out how far these kind of systems will learn the behavior like humans and creating different stratigies and behaviors.
 
