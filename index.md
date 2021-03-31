@@ -4,9 +4,10 @@ layout: default
 
 ## About Me
 
-<img class="profile-picture" src="sherlock.jpg">
+<img class="profile-picture" src="avatar.jpg">
 
-Hi! I am a junior year student of B.E. Computer Science at Birla Institute of Technology and Science, Pilani.
+Hello! My name is Hany Hamed. I am a 3rd-year Computer Science (Robotics track) bachelor student at Innopolis University.
+Currently, I am interested in Robot learning (behavioral learning, reinforcement learning, evolutionary algorithms, ...etc), multi-robotics system, Sim2Real.
 
 This is a jekyll based resume template. You can find the full source code on [GitHub](https://github.com/bk2dcradle/researcher)
 
