@@ -6,7 +6,7 @@ layout: default
 
 <img class="img-icon" class="profile-picture" src="avatar.jpg" width="200px">
 
-**Hello!** My name is Hany Hamed. I am a 3rd-year Computer Science (Robotics track) bachelor student at [Innopolis University](https://innopolis.university/en/).
+**Hello!** My name is Hany Hamed. I am a 4th-year Computer Science (Robotics track) bachelor student at [Innopolis University](https://innopolis.university/en/).
 
 Originally, I am from Egypt 🇪🇬 and currently I am located in [Innopolis, Russia](https://innopolis.com/en/) to study my bachelor degree.
 
