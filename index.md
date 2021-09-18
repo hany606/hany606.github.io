@@ -72,6 +72,7 @@ My current research work is about creating a system of multiple drones that able
     [Manuscripts in preparation]
 
 6. **A Brief Survey on Locomotion Control Methods For Crawling Robots**
+
     **H. Hamed**, S. Savin and L. Vorochaeva
     
     [Manuscripts in preparation]
