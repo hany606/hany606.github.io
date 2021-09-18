@@ -4,7 +4,7 @@ layout: default
 
 ## About Me
 
-<img class="img-icon" class="profile-picture" src="avatar.jpg" width="200px">
+<img class="img-icon" class="profile-picture" src="avatar.jpg" width="150px">
 
 **Hello!** My name is Hany Hamed. I am a 4th-year Computer Science (Robotics track) bachelor student at [Innopolis University](https://innopolis.university/en/).
 
@@ -30,12 +30,18 @@ I am interested in developing a system of multiple robots that able to learn som
 
 I am curious to find out how far these kind of systems will learn the behavior like humans and creating different stratigies and behaviors.
 
-My current research work is about creating a system of multiple drones that able to learn to chase each other as in [Pursuit and Evasion Games](https://www.wikiwand.com/en/Pursuit-evasion).
+My current research work is about creating a system of multiple drones that able to learn to chase each other as in [Pursuit and Evasion Games](https://www.wikiwand.com/en/Pursuit-evasion) using Reinforcement Learning.
 
 
 ## Publications
 
-1. **Learning stabilizing control policies for a tensegrity hopper with augmented random search**
+1. **Optimization-based Trajectory Tracking Approach for Multi-rotor Ariel Vehicles  in  Unknown  Environments**
+
+    G. Kulathunga, **H. Hamed**, D. Devitt and A. Klimchik
+    
+    [Manuscript submitted for publication]
+
+2. **Learning stabilizing control policies for a tensegrity hopper with augmented random search**
  
     V. Kurenkov, **H. Hamed**, and S. Savin
     
@@ -43,7 +49,7 @@ My current research work is about creating a system of multiple drones that able
 
     ([code](https://github.com/hany606/tensegrity-vertical-stability), [paper](https://arxiv.org/abs/2004.02641))
 
-2. **Analysis of algorithms for controlling the length of crawling robot modules**
+3. **Analysis of algorithms for controlling the length of crawling robot modules**
 
     L. Vorochaeva, S. Savin, **H. Hamed**, and A. M. Leon
 
@@ -51,7 +57,7 @@ My current research work is about creating a system of multiple drones that able
     
     ([paper](https://ieeexplore.ieee.org/abstract/document/9216734))
 
-3. **Lateral gait analysis of a crawling robot by means of controlling the lengths of links and friction in the supports**
+4. **Lateral gait analysis of a crawling robot by means of controlling the lengths of links and friction in the supports**
 
     L. Vorochaeva, S. Savin, and **H. Hamed**
     
@@ -59,16 +65,17 @@ My current research work is about creating a system of multiple drones that able
     
     ([paper](https://ieeexplore.ieee.org/abstract/document/9290216))
 
-4. **Sim2Real for Tensegrity Robots**
+5. **Differentiable Tensegrity Simulator with Sim2Real Experiments**
 
-    **H. Hamed**, V. Kurenkov and S. Savin
+    **H. Hamed***, V. Kurenkov* and S. Savin
     
     [Manuscripts in preparation]
 
-5. **A Survey On Different locomotion control methods for crawling robots**
-    **H. Hamed** and S. Savin
+6. **A Brief Survey on Locomotion Control Methods For Crawling Robots**
+    **H. Hamed**, S. Savin and L. Vorochaeva
     
     [Manuscripts in preparation]
+
 
 <!-- ## Typography
 
@@ -91,8 +98,12 @@ Here is a blockquote
 > To a great mind, nothing is little -->
 
 ## References
+* [Dr. Stefano Nolfi](mailto:stefano.nolfi@istc.cnr.it): Research Director, National Research Council
 
 * [Dr. Alexandr Klimchik](mailto:a.klimchik@innopolis.ru): Director of Robotics and Computer Vision Institute, Head of Master and Bachelor on Robotics program and Associate Professor, Innopolis University.
 
 * [Prof. Sergei Savin](mailto:s.savin@innopolis.ru): Senior Researcher at Center for Technologies in Robotics and Mechatronics Components, Innopolis University
+
+* [Prof. Igor Gaponov](mailto:i.gaponov@innopolis.ru): Head of Lab of Intelligent Robotics Systems, Innopolis University
+
 
