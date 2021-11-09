@@ -39,7 +39,7 @@ My current research work is about creating a system of multiple drones that able
 
     G. Kulathunga, **H. Hamed**, D. Devitt and A. Klimchik
     
-    [Manuscript submitted for publication]
+    [Manuscript submitted for publication in IEEE Robotics and Automation Letters (RA-L) 2022]
 
 2. **Learning stabilizing control policies for a tensegrity hopper with augmented random search**
  
@@ -69,13 +69,13 @@ My current research work is about creating a system of multiple drones that able
 
     **H. Hamed***, V. Kurenkov* and S. Savin
     
-    [Manuscripts in preparation]
+    [Manuscripts to be submitted in Learning for Dynamics and Control Conference (L4DC) 2022]
 
 6. **A Brief Survey on Locomotion Control Methods For Crawling Robots**
 
     **H. Hamed**, S. Savin and L. Vorochaeva
     
-    [Manuscripts in preparation]
+    [Manuscripts to be submitted in Nonlinearity, Information and Robotics (NIR) 2022]
 
 
 <!-- ## Typography
