@@ -27,3 +27,6 @@ nav:
    link: "contact"
  - name: "Projects"
    link: "projects"
+
+- name: "Test"
+  link: "test"

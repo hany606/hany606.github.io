@@ -1,6 +1,5 @@
 ---
 layout: default
-is_contact: true
 ---
 # To Be added
 
@@ -26,4 +25,4 @@ is_contact: true
 
 - [ ] Current RL algorithms implementations
 
-- [ ] <a href="test">Test</a>
+- [ ] <a href="test">{{Test}}</a>
