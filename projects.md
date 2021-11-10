@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
+
+- <a href="projects/handheldlidar">Handheld lidar</a>
+
 # To Be added
 
-- [ ] <a href="projects/handheldlidar">Handheld lidar</a>
 
 - [ ] DQN from JetBrains test
 

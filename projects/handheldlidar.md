@@ -5,7 +5,8 @@ layout: default
 # Handheld Lidar
 
 This device was used to scan Innopolis city, the below video shows the results of the device
-<iframe width="420" height="315" src="http://www.youtube.com/embed/0-JlWdAJvh8" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/0-JlWdAJvh8" frameborder="0" allowfullscreen> </iframe>
+
 
 This device was made for an industrial partner. We have used ROS, Velodyne lidar and Jetson xavier with touch screen for the user.
 
