@@ -3,7 +3,7 @@ layout: default
 ---
 # To Be added
 
-- [ ] handheld lidar (Show results)
+- [ ] <a href="projects/handheldlidar">Handheld lidar</a>
 
 - [ ] DQN from JetBrains test
 
@@ -25,4 +25,4 @@ layout: default
 
 - [ ] Current RL algorithms implementations
 
-- [ ] <a href="test">{{Test}}</a>
+- [ ] <a href="test">Test</a>

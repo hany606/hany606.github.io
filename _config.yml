@@ -30,3 +30,7 @@ nav:
 extra:
   - name: "Test"
     link: "test"
+
+projects:
+  - name: "HandHeldLidar"
+    link: "projects/handheldlidar"
