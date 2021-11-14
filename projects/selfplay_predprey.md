@@ -9,9 +9,9 @@ Here we describe the updates from my work on the bachelor thesis, the thesis is 
 
 # Last updates (05.11.2021): initial results
 
-The basic work that I did is to implement the training scripts based on [https://arxiv.org/abs/1710.03748](Bansal, T., Pachocki, J., Sidor, S., Sutskever, I., & Mordatch, I. (2017). Emergent complexity via multi-agent competition. arXiv preprint arXiv:1710.03748), later we will introduce some modifications based on the results that we have obtained.
+The basic work that I did is to implement the training scripts based on [Bansal, T., Pachocki, J., Sidor, S., Sutskever, I., & Mordatch, I. (2017). Emergent complexity via multi-agent competition. arXiv preprint arXiv:1710.03748](https://arxiv.org/abs/1710.03748), later we will introduce some modifications based on the results that we have obtained.
 
-The environment is based on predprey environment from [https://github.com/snolfi/evorobotpy2/blob/master/lib/predprey.cpp](evorobotpy2 by professor Stefano Nolfi).
+The environment is based on predprey environment from [evorobotpy2 by professor Stefano Nolfi](https://github.com/snolfi/evorobotpy2/blob/master/lib/predprey.cpp).
 
 
 Some initial results that we have obtained:
