@@ -2,7 +2,10 @@
 layout: default
 ---
 
-- <a href="projects/handheldlidar">Handheld lidar</a>
+- <a href="handheldlidar">Handheld lidar</a>
+
+- <a href="selfplay_predprey">Predator-prey self-play reinforcement learning</a>
+
 
 # To Be added
 
