@@ -33,6 +33,6 @@ extra:
 
 projects:
   - name: "HandHeldLidar"
-    link: "handheldlidar"
+    link: "projects/handheldlidar"
   - name: "SelfPlayPredPrey"
-    link: "selfplay_predprey"
+    link: "projects/selfplay_predprey"
