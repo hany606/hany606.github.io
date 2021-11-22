@@ -30,9 +30,9 @@ nav:
 extra:
   - name: "Test"
     link: "test"
+  - name: "HandHeldLidar"
+    link: "handheldlidar"
 
 projects:
-  - name: "HandHeldLidar"
-    link: "projects/handheldlidar"
   - name: "SelfPlayPredPrey"
     link: "projects/selfplay_predprey"
