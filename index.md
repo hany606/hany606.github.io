@@ -4,7 +4,8 @@ layout: default
 
 ## About Me
 
-<img class="profile-picture" class="profile-picture" src="avatar.jpg" width="150px">
+<!-- <img class="profile-picture" class="profile-picture" src="avatar.jpg" width="150px"> -->
+<img style="height:auto;" alt="" width="260" height="260" class="avatar avatar-user width-full border color-bg-default" src="avatar.jpg">
 
 **Hello!** My name is Hany Hamed. I am a 4th-year Computer Science (Robotics track) bachelor student at [Innopolis University](https://innopolis.university/en/).
 
