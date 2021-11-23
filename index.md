@@ -36,7 +36,7 @@ My current research work is about creating a system of multiple drones that able
 
 ## Publications
 
-1. **Optimization-based Trajectory Tracking Approach for Multi-rotor Ariel Vehicles  in  Unknown  Environments**
+1. **Optimization-based Trajectory Tracking Approach for Multi-rotor Aerial Vehicles  in  Unknown  Environments**
 
     G. Kulathunga, **H. Hamed**, D. Devitt and A. Klimchik
     
