@@ -7,7 +7,7 @@ layout: default
 Here we describe the updates from my work on the bachelor thesis, the thesis is about "**Learning behavioural strategies for a multi-robot system in a predator-prey environment using Reinforcement Learning**"
 
 
-# Last updates (05.11.2021): initial results
+# Last updates (15.10.2021): initial results
 
 The basic work that I did is to implement the training scripts based on [Bansal, T., Pachocki, J., Sidor, S., Sutskever, I., & Mordatch, I. (2017). Emergent complexity via multi-agent competition. arXiv preprint arXiv:1710.03748](https://arxiv.org/abs/1710.03748), later we will introduce some modifications based on the results that we have obtained.
 
