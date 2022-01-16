@@ -10,7 +10,7 @@ This device was used to scan Innopolis city, the below video shows the results o
 
 
 
-This device was made for an industrial partner. We have used ROS, Velodyne lidar and Jetson xavier with touch screen for the user.
+This device was made for an industrial partner. We have used ROS, Ouster lidar and Jetson xavier with touch screen for the user.
 
 Also, I created a simple gui to easily used the system (This gui has been done without UI specialist, so it can be improved).
 
