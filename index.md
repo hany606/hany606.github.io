@@ -40,7 +40,7 @@ My current research work is about creating a system of multiple drones that able
 
     G. Kulathunga, **H. Hamed**, D. Devitt and A. Klimchik
     
-    [Manuscript submitted for publication in IEEE Robotics and Automation Letters (RA-L) 2022]
+    [Accepted in IEEE Robotics and Automation Letters (RA-L) 2022]
 
 2. **Learning stabilizing control policies for a tensegrity hopper with augmented random search**
  
