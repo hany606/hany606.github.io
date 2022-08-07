@@ -7,9 +7,13 @@ layout: default
 <img class="profile-picture" src="avatar.jpg" width="260px" height="300px">
 <!-- <img style="height:auto;" alt="" width="260px" height="260px" class="avatar avatar-user width-full border color-bg-default" src="avatar.jpg"> -->
 
-**Hello!** My name is Hany Hamed. I am a 4th-year Computer Science (Robotics track) bachelor student at [Innopolis University](https://innopolis.university/en/).
+**Hello!** My name is Hany Hamed. I am a 1st-year Master of Science in Robotics at [KAIST](https://www.kaist.ac.kr/en/).
 
-Originally, I am from Egypt 🇪🇬 and currently I am located in [Innopolis, Russia](https://innopolis.com/en/) to study my bachelor degree.
+<!-- 4th-year Computer Science (Robotics track) bachelor student at [Innopolis University](https://innopolis.university/en/). -->
+
+Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, South Korea.
+
+<!-- (https://innopolis.com/en/) to study my bachelor degree. -->
 
 <!-- <img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/pdf.svg" title="PDF" />&nbsp; &nbsp; CV: [PDF](https://drive.google.com/file/d/1jCVdzSeKpFmIbUnwPJ15etRjJpP82kGy/view?usp=sharing) -->
 
@@ -25,6 +29,7 @@ Originally, I am from Egypt 🇪🇬 and currently I am located in [Innopolis, R
 At the current moment, I am interested in:
 * Robot learning (Reinforcement Learning, Evolutionary Algorithms, ...etc)
 * Multi-robotic system
+* Motion Planning
 * Sim2Real
 
 I am interested in developing a system of multiple robots that able to learn some behaviors in order to perform some tasks using learning-based methods, moroever, I am interested in transfering the learnt policy for the robots to the real world.
