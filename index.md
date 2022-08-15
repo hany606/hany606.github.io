@@ -27,8 +27,16 @@ Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, Sout
 
 ## News:
 
-- July 2022: Graduated with Bachelor in Computer Science (Robotics track), Innopolis University.
-- March 2022: "Optimization-based Trajectory Tracking Approach for Multi-rotor Aerial Vehicles  in  Unknown  Environments" got accepted in RA-L (Second Author)
+- **August 2022:** Joined VDC lab
+- **July 2022:** Graduated with Bachelor in Computer Science (Robotics track), Innopolis University.
+- **April 2022:** Got accepted in Automation and Electrical Engineering, Master of Science (Technology) (2 yrs) Aalto University, School of Electrical Engineering.
+- **Feburary 2022:** Got accepted to attend "2022 IEEE RAS Summer School on Multi-Robot Systems in Prague"
+- **Feburuary 2022:** Got accepted in M.S. in Robotics  at KAIST
+- **January 2022:** "Optimization-based Trajectory Tracking Approach for Multi-rotor Aerial Vehicles  in  Unknown  Environments" got accepted in RA-L (Second Author)
+- **December 2021:** Got accepted in Master of Science programme in ’Master Systems and
+Control’ from University of Twente.
+
+**Disclaimer: of course many failures, bad news and rejections happened during these wonderful news, however, I am determined to overcome these failures inshallah**
 
 ## Research Interest
 At the current moment, I am interested in:
@@ -37,7 +45,9 @@ At the current moment, I am interested in:
 * Multi-robotic system
 * Sim2Real
 
-Starting from August 2022, I am a member of the "Decision & Motion Planning" team in [VDC lab](http://vdclab.kaist.ac.kr/) under the supervision of Prof. [Dongsuk Kum](http://vdclab.kaist.ac.kr/bbs/board.php?bo_table=sub1_1). Therefore, at the moment, I am interested in developing motion planning algorithms based on learning approaches specifically Reinforcement Learning. I am willing to explore and work on the intersection between Multi-Agent Reinforcement Learning (MARL) and motion planning for Autonomous Vehicles. I am excited to research and work on how MARL can be used in autonomous vehicles and the self-driving cars research field to extend the current state-of-the-art.
+Starting from August 2022, I am a member of the "Decision & Motion Planning" team in [VDC lab](http://vdclab.kaist.ac.kr/) under the supervision of Prof. [Dongsuk Kum](http://vdclab.kaist.ac.kr/bbs/board.php?bo_table=sub1_1). 
+
+Therefore, at the moment, I am interested in developing motion planning algorithms based on learning approaches specifically Reinforcement Learning. I am willing to explore and work on the intersection between Multi-Agent Reinforcement Learning (MARL) and motion planning for Autonomous Vehicles. I am excited to research and work on how MARL can be used in autonomous vehicles and the self-driving cars research field to extend the current state-of-the-art.
 
 
 
