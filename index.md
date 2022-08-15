@@ -27,7 +27,7 @@ Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, Sout
 
 ## News:
 
-- **August 2022:** Joined VDC lab
+- **August 2022:** Arrived Daejeon, South Korea and officially joined VDC lab at KAIST.
 - **July 2022:** Graduated with Bachelor in Computer Science (Robotics track) from Innopolis University. Excellent grade in the bachelor's thesis and GPA 4.68/5.00 (Too close to the "Graduated with Honors" :) )
 - **April 2022:** Got accepted in Automation and Electrical Engineering, Master of Science (Technology) (2 yrs) Aalto University, School of Electrical Engineering.
 - **Feburary 2022:** Got accepted to attend "2022 IEEE RAS Summer School on Multi-Robot Systems in Prague"
