@@ -7,8 +7,28 @@ layout: default
 Here we describe the updates from my work on the bachelor thesis, the thesis is about "**Learning behavioural strategies for a multi-robot system in a predator-prey environment using Reinforcement Learning**"
 
 
+If you like this work and intend to use this software or the information inside has helped you in your work, I would be happy to cite it as below. (Hopefully a publication will be released later)
 
-# Thesis defense: Video results (14.06.2022)
+
+```
+@software{Hamed_Learning_behavioral_strategies_2022,
+  author = {Hamed, Hany and Klimchik, Alexandr and Nolfi, Stefano},
+  doi = {10.5281/zenodo.1234},
+  month = {6},
+  title = {{Learning behavioral strategies for a predator and prey using Self-play Reinforcement Learning}},
+  url = {https://github.com/hany606/Bachelor-Thesis22-Predator-prey-Self-Play-RL},
+  version = {1.0.0},
+  year = {2022}
+}
+```
+
+# (15.06.2022) Thesis documents:
+
+* Preprint: [link](https://drive.google.com/file/d/1J1bmWlP1J9skfXmwQXqdyMFVNwNfsgto/view)
+* Presentation: [link](https://drive.google.com/file/d/1mgLtZNa14XSOrtyRj58-buWwY9n79iME/view)
+* GitHub repository: [link](https://github.com/hany606/Bachelor-Thesis22-Predator-prey-Self-Play-RL)
+
+# (14.06.2022) Thesis defense: Video results
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4IL2C57OIQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

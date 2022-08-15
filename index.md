@@ -11,7 +11,8 @@ layout: default
 
 <!-- 4th-year Computer Science (Robotics track) bachelor student at [Innopolis University](https://innopolis.university/en/). -->
 
-Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, South Korea.
+Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, South Korea. In 2022, I have finished my Bachelor in Computer Science with a specialization in robotics from Innopolis University.
+
 
 <!-- (https://innopolis.com/en/) to study my bachelor degree. -->
 
@@ -24,19 +25,28 @@ Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, Sout
 <img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/linkedin.svg" title="LinkedIn" />&nbsp; &nbsp; LinkedIn: [LinkedIn](https://www.linkedin.com/in/hany-hamed-elanwar/)
 
 
+## News:
+
+- July 2022: Graduated from Bachelor in Computer Science (Robotics track), Innopolis University.
+- March 2022: "Optimization-based Trajectory Tracking Approach for Multi-rotor Aerial Vehicles  in  Unknown  Environments" got accepted in RA-L (Second Author)
 
 ## Research Interest
 At the current moment, I am interested in:
+* Motion planning of self-driving cars.
 * Robot learning (Reinforcement Learning, Evolutionary Algorithms, ...etc)
 * Multi-robotic system
-* Motion Planning
 * Sim2Real
 
-I am interested in developing a system of multiple robots that able to learn some behaviors in order to perform some tasks using learning-based methods, moroever, I am interested in transfering the learnt policy for the robots to the real world.
+Starting from August 2022, I am a member of "Decision & Motion Planning" team in [VDC lab](http://vdclab.kaist.ac.kr/) under supervision of Prof. [Dongsuk Kum](http://vdclab.kaist.ac.kr/bbs/board.php?bo_table=sub1_1). Therefore, at the moment, I am interested in developing motion planning algorithms based on learning approaches specifically Reinforcement Learning. I am willing to explore and work on the intersection between Multi-Agent Reinforcement Learning (MARL) and motion planning for Autonomous Vehicles. I am excited to research and work on how MARL can be used in autonomous vehicles ad self-driving cars research field to extend the current state-of-the-art.
 
-I am curious to find out how far these kind of systems will learn the behavior like humans and creating different stratigies and behaviors.
 
-My current research work is about creating a system of multiple drones that able to learn to chase each other as in [Pursuit and Evasion Games](https://www.wikiwand.com/en/Pursuit-evasion) using Reinforcement Learning.
+
+<!-- I am interested in developing a system of multiple robots that able to learn some behaviors in order to perform some tasks using learning-based methods, moroever, I am interested in transfering the learnt policy for the robots to the real world.
+
+I am curious to find out how far these kind of systems will learn the behavior like humans and creating different stratigies and behaviors. -->
+
+During the bachelor, I explored, implemented, and used self-play reinforcement learning to enable agents in a predator-prey environment to learn intellegent behaviors while partially observing the environment ([Link](https://hany606.github.io/selfplay_predprey)). I had explored my passion in researching about how to develop multiple intelligent robots in a system that able to learn some interesting behaviors to perform some tasks using learning-based methods such as MARL. Furthermore, I am interested in transfering the learnt policy for real robots in the real world.
+
 
 
 ## Publications
@@ -45,7 +55,11 @@ My current research work is about creating a system of multiple drones that able
 
     G. Kulathunga, **H. Hamed**, D. Devitt and A. Klimchik
     
-    [Accepted in IEEE Robotics and Automation Letters (RA-L) 2022]
+    IEEE Robotics and Automation Letters, 2022
+
+    ([paper](https://ieeexplore.ieee.org/abstract/document/9713695))
+
+    <u>Participated in debugging, conducting, and piloting the real-world experiments.</u>
 
 2. **Learning stabilizing control policies for a tensegrity hopper with augmented random search**
  
@@ -55,15 +69,17 @@ My current research work is about creating a system of multiple drones that able
 
     ([code](https://github.com/hany606/tensegrity-vertical-stability), [paper](https://arxiv.org/abs/2004.02641))
 
-3. **Analysis of algorithms for controlling the length of crawling robot modules**
+    <u>Participated in developing and conducting the RL experiments and developing the simulation and training scripts</u>
+
+<!-- 3. **Analysis of algorithms for controlling the length of crawling robot modules**
 
     L. Vorochaeva, S. Savin, **H. Hamed**, and A. M. Leon
 
     2020 4th Scientific School on Dynamics of Complex Networks and their Application in Intellectual Robotics (DCNAIR)
     
-    ([paper](https://ieeexplore.ieee.org/abstract/document/9216734))
+    ([paper](https://ieeexplore.ieee.org/abstract/document/9216734)) -->
 
-4. **Lateral gait analysis of a crawling robot by means of controlling the lengths of links and friction in the supports**
+1. **Lateral gait analysis of a crawling robot by means of controlling the lengths of links and friction in the supports**
 
     L. Vorochaeva, S. Savin, and **H. Hamed**
     
@@ -71,7 +87,9 @@ My current research work is about creating a system of multiple drones that able
     
     ([paper](https://ieeexplore.ieee.org/abstract/document/9290216))
 
-5. **Differentiable Tensegrity Simulator with Sim2Real Experiments**
+    <u>Participated in proofreading, literature review, and writing a section.</u>
+
+<!-- 5. **Differentiable Tensegrity Simulator with Sim2Real Experiments**
 
     **H. Hamed***, V. Kurenkov* and S. Savin
     
@@ -81,7 +99,7 @@ My current research work is about creating a system of multiple drones that able
 
     **H. Hamed**, S. Savin and L. Vorochaeva
     
-    [Manuscripts to be submitted in Nonlinearity, Information and Robotics (NIR) 2022]
+    [Manuscripts to be submitted in Nonlinearity, Information and Robotics (NIR) 2022] -->
 
 
 <!-- ## Typography

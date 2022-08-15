@@ -4,30 +4,22 @@ layout: default
 
 - <a href="handheldlidar">Handheld lidar</a>
 
-- <a href="selfplay_predprey">Predator-prey self-play reinforcement learning</a>
+- <a href="selfplay_predprey">Predator-prey self-play reinforcement learning (Bachelor's thesis)</a>
+
+- <a href="https://github.com/hany606/PMLDL-Project">RL algorithms implementation</a>
+
+- <a href="https://github.com/hany606/tensegrity-vertical-stability">Tensegrity vertical hopper</a>
+
+- <a href="https://github.com/hany606/COEX-Internship19/tree/master/projects/Human_pose_estimation_drone_control">Human pose estimation with COEX drone</a>
+
+- <a href="https://github.com/hany606/Drone-Detection">Drone detection project</a>
+
+- <a href="https://github.com/hany606/PAI_Fall21IU">Practical AI course's simple projects</a>
 
 
-# To Be added
+<!-- - [ ] Taichi Differentiable simulator -->
 
 
-- [ ] DQN from JetBrains test
+<!-- - [ ] ROS2 from GSoD test -->
 
-- [ ] Tensegrity vertical hopper
-
-- [ ] Taichi Differentiable simulator
-
-- [ ] Human pose estimation with COEX drone
-
-- [ ] ROS2 from GSoD test
-
-- [ ] JDE challenge with simple PID
-
-- [ ] PAI simple projects
-
-- [ ] PMLDL simple projects
-
-- [ ] Drone detection project
-
-- [ ] Current RL algorithms implementations
-
-- [ ] <a href="test">Test</a>
+<!-- - [ ] JDE challenge with simple PID -->
