@@ -27,7 +27,7 @@ Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, Sout
 
 ## News:
 
-- July 2022: Graduated from Bachelor in Computer Science (Robotics track), Innopolis University.
+- July 2022: Graduated with Bachelor in Computer Science (Robotics track), Innopolis University.
 - March 2022: "Optimization-based Trajectory Tracking Approach for Multi-rotor Aerial Vehicles  in  Unknown  Environments" got accepted in RA-L (Second Author)
 
 ## Research Interest
@@ -37,15 +37,15 @@ At the current moment, I am interested in:
 * Multi-robotic system
 * Sim2Real
 
-Starting from August 2022, I am a member of "Decision & Motion Planning" team in [VDC lab](http://vdclab.kaist.ac.kr/) under supervision of Prof. [Dongsuk Kum](http://vdclab.kaist.ac.kr/bbs/board.php?bo_table=sub1_1). Therefore, at the moment, I am interested in developing motion planning algorithms based on learning approaches specifically Reinforcement Learning. I am willing to explore and work on the intersection between Multi-Agent Reinforcement Learning (MARL) and motion planning for Autonomous Vehicles. I am excited to research and work on how MARL can be used in autonomous vehicles ad self-driving cars research field to extend the current state-of-the-art.
+Starting from August 2022, I am a member of the "Decision & Motion Planning" team in [VDC lab](http://vdclab.kaist.ac.kr/) under the supervision of Prof. [Dongsuk Kum](http://vdclab.kaist.ac.kr/bbs/board.php?bo_table=sub1_1). Therefore, at the moment, I am interested in developing motion planning algorithms based on learning approaches specifically Reinforcement Learning. I am willing to explore and work on the intersection between Multi-Agent Reinforcement Learning (MARL) and motion planning for Autonomous Vehicles. I am excited to research and work on how MARL can be used in autonomous vehicles and the self-driving cars research field to extend the current state-of-the-art.
 
 
 
-<!-- I am interested in developing a system of multiple robots that able to learn some behaviors in order to perform some tasks using learning-based methods, moroever, I am interested in transfering the learnt policy for the robots to the real world.
+<!-- I am interested in developing a system of multiple robots that are able to learn some behaviors in order to perform some tasks using learning-based methods, moroever, I am interested in transfering the learnt policy for the robots to the real world.
 
 I am curious to find out how far these kind of systems will learn the behavior like humans and creating different stratigies and behaviors. -->
 
-During the bachelor, I explored, implemented, and used self-play reinforcement learning to enable agents in a predator-prey environment to learn intellegent behaviors while partially observing the environment ([Link](https://hany606.github.io/selfplay_predprey)). I had explored my passion in researching about how to develop multiple intelligent robots in a system that able to learn some interesting behaviors to perform some tasks using learning-based methods such as MARL. Furthermore, I am interested in transfering the learnt policy for real robots in the real world.
+During my bachelor's, I explored, implemented, and used self-play reinforcement learning to enable agents in a predator-prey environment to learn intelligent behaviors while partially observing the environment ([Link](https://hany606.github.io/selfplay_predprey)). I had explored my passion in researching how to develop multiple intelligent robots in a system that can learn some interesting behaviors to perform some tasks using learning-based methods such as MARL. Furthermore, I am interested in transfering the learnt policy for real robots in the real world.
 
 
 
@@ -59,7 +59,7 @@ During the bachelor, I explored, implemented, and used self-play reinforcement l
 
     ([paper](https://ieeexplore.ieee.org/abstract/document/9713695))
 
-    <u>Participated in debugging, conducting, and piloting the real-world experiments.</u>
+    <u>Participated in debugging, conducting, and piloting real-world experiments.</u>
 
 2. **Learning stabilizing control policies for a tensegrity hopper with augmented random search**
  

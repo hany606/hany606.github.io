@@ -7,7 +7,7 @@ layout: default
 Here we describe the updates from my work on the bachelor thesis, the thesis is about "**Learning behavioural strategies for a multi-robot system in a predator-prey environment using Reinforcement Learning**"
 
 
-If you like this work and intend to use this software or the information inside has helped you in your work, I would be happy to cite it as below. (Hopefully a publication will be released later)
+If you like this work and intend to use this software or if the information inside has helped you in your work, I would be happy to cite it below. (Hopefully, a publication will be released later)
 
 
 ```
@@ -32,7 +32,7 @@ If you like this work and intend to use this software or the information inside 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4IL2C57OIQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-At the end of the thesis, I have managed to implement self-play simple algorithm besides multiple variations of it. Furthermore, running multiple experiments on two environments for predator-prey to evaluate the self-play implemented algorithms.
+At the end of the thesis, I managed to implement a self-play algorithm with multiple variations of it. Furthermore, running multiple experiments on two environments for predator-prey to evaluate the self-play implemented algorithms.
 
 An online version of the thesis will be provided soon, as well as a publication related to the work provided in the thesis.
 
@@ -49,8 +49,4 @@ Some initial results that we have obtained:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NK2yCgMo1qk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-In this video, we show the visualization of evaluation the agents. We have trained the agents in an alternative manner as it is described in (Bansal et al. 2017) for 50 rounds(iteration/epoch), then we visually evaluate/test the predator agent of ith round against the prey agent of ith round for all the rounds.
-
-### Note: 
-
-Note: the codes will be released later after obtaining the desired results
+In this video, we show the visualization of the agent's evolution. We have trained the agents in an alternative manner as it is described in (Bansal et al. 2017) for 50 rounds(iteration/epoch), then we visually evaluate/test the predator agent of the ith round against the prey agent of ith round for all the rounds.
