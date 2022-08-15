@@ -36,7 +36,7 @@ Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, Sout
 - **December 2021:** Got accepted in Master of Science programme in ’Master Systems and
 Control’ from University of Twente.
 
-**Disclaimer: of course many failures, bad news and rejections happened during these wonderful news, however, I am determined to overcome these failures inshallah**
+*Note: of course many failures, bad news and rejections happened during these wonderful news, however, I am determined to overcome these failures inshallah.*
 
 ## Research Interest
 At the current moment, I am interested in:
