@@ -2,9 +2,12 @@
 layout: default
 ---
 
-- <a href="handheldlidar">Handheld lidar</a>
+- <a href="https://github.com/hany606/awesome-sources">Awesome sources repository</a>
+
 
 - <a href="selfplay_predprey">Predator-prey self-play reinforcement learning (Bachelor's thesis)</a>
+
+- <a href="handheldlidar">Handheld lidar</a>
 
 - <a href="https://github.com/hany606/PMLDL-Project">RL algorithms implementation</a>
 
