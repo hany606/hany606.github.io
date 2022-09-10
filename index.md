@@ -7,11 +7,13 @@ layout: default
 <img class="profile-picture" src="avatar.jpg" width="260px" height="300px">
 <!-- <img style="height:auto;" alt="" width="260px" height="260px" class="avatar avatar-user width-full border color-bg-default" src="avatar.jpg"> -->
 
-**Hello!** My name is Hany Hamed. I am a 1st-year Master of Science in Robotics at [KAIST](https://www.kaist.ac.kr/en/).
+**Hello!** My name is Hany Hamed. I am a 1st-year Master of Science in Robotics at [KAIST](https://www.kaist.ac.kr/en/). Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, South Korea. 
+
 
 <!-- 4th-year Computer Science (Robotics track) bachelor student at [Innopolis University](https://innopolis.university/en/). -->
 
-Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, South Korea. In 2022, I have finished my Bachelor in Computer Science with a specialization in robotics from Innopolis University.
+
+<!-- In 2022, I have finished my Bachelor in Computer Science with a specialization in robotics from Innopolis University. -->
 
 
 <!-- (https://innopolis.com/en/) to study my bachelor degree. -->
@@ -23,6 +25,20 @@ Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, Sout
 <img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/google_scholar.svg" title="Google Scholar" />&nbsp; &nbsp; Google Scholar: [Hany Hamed](https://scholar.google.com/citations?user=J5ogYwsAAAAJ&hl=en)
 
 <img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/linkedin.svg" title="LinkedIn" />&nbsp; &nbsp; LinkedIn: [LinkedIn](https://www.linkedin.com/in/hany-hamed-elanwar/)
+
+
+## Research Interest
+At the current moment, I am interested in:
+* Reinforcement Learning (Specifically, Multi-Agent Reinforcement Learning)
+* Motion planning (For now, focusing on Self-driving cars)
+* Multi-Agent Systems
+* Robotics & Sim2Real
+ 
+<!-- * Motion planning of self-driving cars.
+* Robot learning (Reinforcement Learning, Evolutionary Algorithms, ...etc)
+* Multi-robotic system
+* Sim2Real -->
+
 
 
 ## News:
@@ -38,17 +54,10 @@ Control’ from the University of Twente.
 
 *Note: of course many failures, bad news, and rejections happened during this wonderful news, however, I am determined to overcome these failures inshallah.*
 
-## Research Interest
-At the current moment, I am interested in:
-* Reinforcement Learning (Specifically, Multi-Agent Reinforcement Learning)
-* Motion planning (For now, focusing on Self-driving cars)
-* Multi-Agent Systems
-* Sim2Real
- 
-<!-- * Motion planning of self-driving cars.
-* Robot learning (Reinforcement Learning, Evolutionary Algorithms, ...etc)
-* Multi-robotic system
-* Sim2Real -->
+
+---
+
+# Current status:
 
 Starting from August 2022, I am a member of the "Decision & Motion Planning" team in [VDC lab](http://vdclab.kaist.ac.kr/) under the supervision of Prof. [Dongsuk Kum](http://vdclab.kaist.ac.kr/bbs/board.php?bo_table=sub1_1). 
 
@@ -94,7 +103,7 @@ During my bachelor's, I explored, implemented, and used self-play reinforcement 
     
     ([paper](https://ieeexplore.ieee.org/abstract/document/9216734)) -->
 
-1. **Lateral gait analysis of a crawling robot by means of controlling the lengths of links and friction in the supports**
+3. **Lateral gait analysis of a crawling robot by means of controlling the lengths of links and friction in the supports**
 
     L. Vorochaeva, S. Savin, and **H. Hamed**
     
@@ -137,13 +146,13 @@ Here is a blockquote
 
 > To a great mind, nothing is little -->
 
-## References
+<!-- ## References
 * [Dr. Stefano Nolfi](mailto:stefano.nolfi@istc.cnr.it): Research Director, National Research Council
 
 * [Dr. Alexandr Klimchik](mailto:a.klimchik@innopolis.ru): Director of Robotics and Computer Vision Institute, Head of Master and Bachelor on Robotics program and Associate Professor, Innopolis University.
 
 * [Prof. Sergei Savin](mailto:s.savin@innopolis.ru): Senior Researcher at Center for Technologies in Robotics and Mechatronics Components, Innopolis University
 
-* [Prof. Igor Gaponov](mailto:i.gaponov@innopolis.ru): Head of Lab of Intelligent Robotics Systems, Innopolis University
+* [Prof. Igor Gaponov](mailto:i.gaponov@innopolis.ru): Head of Lab of Intelligent Robotics Systems, Innopolis University -->
 
 
