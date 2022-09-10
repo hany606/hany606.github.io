@@ -5,7 +5,7 @@ is_contact: true
 
 <img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/email.svg" title="Email" />&nbsp; &nbsp; Email: [h.hamed.elanwar@gmail.com](mailto:h.hamed.elanwar@gmail.com)
 
-<img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/email.svg" title="Email" />&nbsp; &nbsp; Email: [h.hamed@innopolis.university](mailto:h.hamed@innopolis.university)
+<img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/email.svg" title="Email" />&nbsp; &nbsp; Email: [h.hamed@kaist.ac.kr](mailto:h.hamed@kaist.ac.kr)
 
 <img class="img-icon" src="https://edent.github.io/SuperTinyIcons/images/svg/github.svg" title="Github" />&nbsp; &nbsp; GitHub: [@hany606](https://github.com/hany606)
 
