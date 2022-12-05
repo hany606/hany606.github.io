@@ -30,20 +30,14 @@ layout: default
 ## Research Interest
 At the current moment, I am interested in:
 * Reinforcement Learning (Specifically, Multi-Agent Reinforcement Learning)
-* Motion planning (For now, focusing on Self-driving cars)
 * Multi-Agent Systems
 * Robotics & Sim2Real
- 
-<!-- * Motion planning of self-driving cars.
-* Robot learning (Reinforcement Learning, Evolutionary Algorithms, ...etc)
-* Multi-robotic system
-* Sim2Real -->
 
 
 
 ## News:
 
-- **August 2022:** Arrived Daejeon, South Korea, and officially joined the VDC lab at KAIST.
+- **August 2022:** Arrived Daejeon, South Korea, and officially joined KAIST.
 - **July 2022:** Graduated with Bachelor in Computer Science (Robotics track) from Innopolis University. Excellent grade in the bachelor's thesis and GPA 4.68/5.00 (Too close to the "Graduated with Honors" :) )
 - **April 2022:** Got accepted in Automation and Electrical Engineering, Master of Science (Technology) (2 yrs) Aalto University, School of Electrical Engineering.
 - **February 2022:** Got accepted to attend "2022 IEEE RAS Summer School on Multi-Robot Systems in Prague"
@@ -58,16 +52,6 @@ Control’ from the University of Twente.
 ---
 
 # Current status:
-
-Starting from August 2022, I am a member of the "Decision & Motion Planning" team in [VDC lab](http://vdclab.kaist.ac.kr/) under the supervision of Prof. [Dongsuk Kum](http://vdclab.kaist.ac.kr/bbs/board.php?bo_table=sub1_1). 
-
-Therefore, at the moment, I am interested in developing motion planning algorithms based on learning approaches specifically Reinforcement Learning. I am willing to explore and work on the intersection between Multi-Agent Reinforcement Learning (MARL) and motion planning for Autonomous Vehicles. I am excited to research and work on how MARL can be used in autonomous vehicles and the self-driving cars research field to extend the current state-of-the-art.
-
-
-
-<!-- I am interested in developing a system of multiple robots that can learn some behaviors to perform some tasks using learning-based methods, moreover, I am interested in transferring the learned policy for the robots to the real world.
-
-I am curious to find out how far this kind of system will learn the behavior of humans and create different strategies and behaviors. -->
 
 During my bachelor's, I explored, implemented, and used self-play reinforcement learning to enable agents in a predator-prey environment to learn intelligent behaviors while partially observing the environment ([Link](https://hany606.github.io/selfplay_predprey)). I had explored my passion in researching how to develop multiple intelligent robots in a system that can learn some interesting behaviors to perform some tasks using learning-based methods such as MARL. Furthermore, I am interested in transferring the learned policy to real robots in the real world.
 
