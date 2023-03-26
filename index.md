@@ -7,7 +7,7 @@ layout: default
 <img class="profile-picture" src="avatar.jpg" width="260px" height="300px">
 <!-- <img style="height:auto;" alt="" width="260px" height="260px" class="avatar avatar-user width-full border color-bg-default" src="avatar.jpg"> -->
 
-**Hello!** My name is Hany Hamed. I am a 1st-year Master of Science in Computer Science at [KAIST](https://www.kaist.ac.kr/en/). I am a member of Agent Machine Learning Lab under the supervision of Prof. [Sungjin Ahn](https://agentlearning.notion.site/Sungjin-Ahn-33450012d4d24f2e952398deefc5c8dc). Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, South Korea. 
+**Hello!** My name is Hany Hamed. I am a 1st-year Master of Science in Computer Science at [KAIST](https://www.kaist.ac.kr/en/). I am a member of [Machine Learning and Mind Lab (MLML)](https://mlml.kaist.ac.kr/) under the supervision of Prof. [Sungjin Ahn](https://agentlearning.notion.site/Sungjin-Ahn-33450012d4d24f2e952398deefc5c8dc). Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, South Korea. 
 
 
 <!-- 4th-year Computer Science (Robotics track) bachelor student at [Innopolis University](https://innopolis.university/en/). -->
@@ -28,10 +28,12 @@ layout: default
 
 
 ## Research Interest
-At the current moment, I am working on exploration and Hierarchical RL. Generally, I am interested in:
+At the current moment, I am working on zero-shot generalization in RL. Generally, I am interested in:
 * Reinforcement Learning 
 * Robotics
 * Multi-Agent Systems
+
+<!-- TODO: Later the research statement -->
 
 
 
@@ -77,7 +79,7 @@ During my bachelor's, I explored, implemented, and used self-play reinforcement 
 
     ([code](https://github.com/hany606/tensegrity-vertical-stability), [paper](https://arxiv.org/abs/2004.02641))
 
-    <u>Participated in developing and conducting the RL experiments and developing the simulation and training scripts</u>
+    <u>Participated in developing the simulation environment and the RL experiments</u>
 
 <!-- 3. **Analysis of algorithms for controlling the length of crawling robot modules**
 
