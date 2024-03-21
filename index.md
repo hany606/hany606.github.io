@@ -64,6 +64,7 @@ During my bachelor's, I explored, implemented, and used self-play reinforcement 
 <!-- 1.  -->
 
 1. **Residual dynamics learning for trajectory tracking for multi-rotor aerial vehicles**
+
     G. Kulathunga, **H. Hamed** and A. Klimchik
     
     Nature - Scientific Reports, 2024
