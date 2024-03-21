@@ -4,8 +4,8 @@ layout: default
 
 ## About Me
 
-<img class="profile-picture" src="avatar.jpg" width="260px" height="300px">
-<!-- <img style="height:auto;" alt="" width="260px" height="260px" class="avatar avatar-user width-full border color-bg-default" src="avatar.jpg"> -->
+<!-- <img class="profile-picture" src="avatar.jpg" width="260px" height="300px"> -->
+<img style="height:auto;" alt="" width="260px" height="260px" class="avatar avatar-user width-full border color-bg-default" src="avatar.jpg">
 
 **Hello!** My name is Hany Hamed. I am a 1st-year Master of Science in Computer Science at [KAIST](https://www.kaist.ac.kr/en/). I am a member of [Machine Learning and Mind Lab (MLML)](https://mlml.kaist.ac.kr/) under the supervision of Prof. [Sungjin Ahn](https://agentlearning.notion.site/Sungjin-Ahn-33450012d4d24f2e952398deefc5c8dc). Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, South Korea. 
 
@@ -28,7 +28,7 @@ layout: default
 
 
 ## Research Interest
-At the current moment, I am working on zero-shot generalization in RL. Generally, I am interested in:
+At the current moment, I am working on zero-shot task generalization with RL. Generally, I am interested in:
 * Reinforcement Learning 
 * Robotics
 * Multi-Agent Systems
@@ -37,7 +37,7 @@ At the current moment, I am working on zero-shot generalization in RL. Generally
 
 
 
-## News:
+<!-- ## News:
 
 - **August 2022:** Arrived Daejeon, South Korea, and officially joined KAIST.
 - **July 2022:** Graduated with Bachelor in Computer Science (Robotics track) from Innopolis University. Excellent grade in the bachelor's thesis and GPA 4.68/5.00 (Too close to the "Graduated with Honors" :) )
@@ -48,20 +48,31 @@ At the current moment, I am working on zero-shot generalization in RL. Generally
 - **December 2021:** Got accepted into the Master of Science program in ’Master Systems and
 Control’ from the University of Twente.
 
-*Note: of course many failures, bad news, and rejections happened during this wonderful news, however, I am determined to overcome these failures inshallah.*
+*Note: of course many failures, bad news, and rejections happened during this wonderful news, however, I am determined to overcome these failures inshallah.* -->
 
 
 ---
 
-# Current status:
+<!-- # Current status:
 
-During my bachelor's, I explored, implemented, and used self-play reinforcement learning to enable agents in a predator-prey environment to learn intelligent behaviors while partially observing the environment ([Link](https://hany606.github.io/selfplay_predprey)). I had explored my passion in researching how to develop multiple intelligent robots in a system that can learn some interesting behaviors to perform some tasks using learning-based methods such as MARL. Furthermore, I am interested in transferring the learned policy to real robots in the real world.
+During my bachelor's, I explored, implemented, and used self-play reinforcement learning to enable agents in a predator-prey environment to learn intelligent behaviors while partially observing the environment ([Link](https://hany606.github.io/selfplay_predprey)). I had explored my passion in researching how to develop multiple intelligent robots in a system that can learn some interesting behaviors to perform some tasks using learning-based methods such as MARL. Furthermore, I am interested in transferring the learned policy to real robots in the real world. -->
 
 
 
 ## Publications
 
-1. **Optimization-based Trajectory Tracking Approach for Multi-rotor Aerial Vehicles  in  Unknown  Environments**
+<!-- 1.  -->
+
+1. **Residual dynamics learning for trajectory tracking for multi-rotor aerial vehicles**
+    G. Kulathunga, **H. Hamed** and A. Klimchik
+    
+    Nature - Scientific Reports, 2024
+
+    ([paper](https://www.nature.com/articles/s41598-024-51822-0))
+
+    <u>Participated in debugging, conducting, and piloting real-world experiments.</u>
+
+2. **Optimization-based Trajectory Tracking Approach for Multi-rotor Aerial Vehicles  in  Unknown  Environments**
 
     G. Kulathunga, **H. Hamed**, D. Devitt and A. Klimchik
     
@@ -71,7 +82,7 @@ During my bachelor's, I explored, implemented, and used self-play reinforcement 
 
     <u>Participated in debugging, conducting, and piloting real-world experiments.</u>
 
-2. **Learning stabilizing control policies for a tensegrity hopper with augmented random search**
+3. **Learning stabilizing control policies for a tensegrity hopper with augmented random search**
  
     V. Kurenkov, **H. Hamed**, and S. Savin
     
@@ -89,7 +100,7 @@ During my bachelor's, I explored, implemented, and used self-play reinforcement 
     
     ([paper](https://ieeexplore.ieee.org/abstract/document/9216734)) -->
 
-3. **Lateral gait analysis of a crawling robot by means of controlling the lengths of links and friction in the supports**
+<!-- 3. **Lateral gait analysis of a crawling robot by means of controlling the lengths of links and friction in the supports**
 
     L. Vorochaeva, S. Savin, and **H. Hamed**
     
@@ -97,7 +108,7 @@ During my bachelor's, I explored, implemented, and used self-play reinforcement 
     
     ([paper](https://ieeexplore.ieee.org/abstract/document/9290216))
 
-    <u>Participated in proofreading, literature review, and writing a section.</u>
+    <u>Participated in proofreading, literature review, and writing a section.</u> -->
 
 <!-- 5. **Differentiable Tensegrity Simulator with Sim2Real Experiments**
 
@@ -110,6 +121,12 @@ During my bachelor's, I explored, implemented, and used self-play reinforcement 
     **H. Hamed**, S. Savin and L. Vorochaeva
     
     [Manuscripts to be submitted in Nonlinearity, Information and Robotics (NIR) 2022] -->
+
+
+## Service
+
+- ICLR 2024 Reviewer
+- IEEE RA-L 2024 Reviewer
 
 
 <!-- ## Typography
