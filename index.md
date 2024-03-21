@@ -4,8 +4,8 @@ layout: default
 
 ## About Me
 
-<!-- <img class="profile-picture" src="avatar.jpg" width="260px" height="300px"> -->
-<img style="height:auto;" alt="" width="260px" height="260px" class="avatar avatar-user width-full border color-bg-default" src="avatar.jpg">
+<img class="profile-picture" src="avatar.jpg" width="260px" height="300px">
+<!-- <img style="height:auto;" alt="" width="260px" height="260px" class="avatar avatar-user width-full border color-bg-default" src="avatar.jpg"> -->
 
 **Hello!** My name is Hany Hamed. I am a 1st-year Master of Science in Computer Science at [KAIST](https://www.kaist.ac.kr/en/). I am a member of [Machine Learning and Mind Lab (MLML)](https://mlml.kaist.ac.kr/) under the supervision of Prof. [Sungjin Ahn](https://agentlearning.notion.site/Sungjin-Ahn-33450012d4d24f2e952398deefc5c8dc). Originally, I am from Egypt 🇪🇬 and currently I am located in Daejeon, South Korea. 
 
