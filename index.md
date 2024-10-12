@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## About Me
+## About Me [Outdated: Will be updated soon]
 
 <img class="profile-picture" src="avatar.jpg" width="260px" height="300px">
 <!-- <img style="height:auto;" alt="" width="260px" height="260px" class="avatar avatar-user width-full border color-bg-default" src="avatar.jpg"> -->
