@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hany Hamed — Reinforcement Learning & Robotics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hany Hamed — reinforcement learning & robotics researcher focused on generalization and sim-to-real.">
+  <link rel="icon" type="image/png" href="https://jonbarron.info/seal_icon.png">
+
+  <style>
+    /* Vertical segmented scroll-spy */
+    /* .vnav{ position: sticky; top: 16px; right: auto; margin-left: auto; } */
+
+    .vnav{
+      position: fixed; /* always visible on desktop */
+      top: 20vh; right: clamp(8px, 2vw, 24px);
+      width: 130px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: color-mix(in oklab, var(--surface) 92%, transparent);
+      box-shadow: var(--shadow);
+      z-index: 50;
+    }
+    .vnav .vbtn{
+      appearance: none; border: 0; background: none; cursor: pointer;
+      display: block; width: 100%; text-align: left;
+      padding: .7rem .9rem; margin: 0; border-radius: 10px;
+      color: var(--muted); font-weight: 600;
+      position: relative; z-index: 1;
+    }
+    .vnav .vbtn[aria-current="true"]{ color: var(--accent); }
+    .vnav .vbtn:focus-visible{ outline:2px solid currentColor; outline-offset:2px; }
+
+    .vnav .thumb{
+      position: absolute;
+      left: 8px; right: 8px;
+      top: var(--thumb-top, 8px);
+      height: var(--thumb-h, 40px);
+      border-radius: calc(var(--radius) - 6px);
+      background: color-mix(in oklab, var(--accent) 12%, var(--surface));
+      box-shadow: inset 0 0 0 1px var(--border);
+      transition: top .25s ease, height .25s ease, background .25s ease;
+      pointer-events: none;
+    }
+
+    /* Hide the floating nav on small screens (optional) */
+    @media (max-width: 900px){
+      .vnav{ display:none; }
+    }
+
+    /* Segmented slider */
+    .segmented{
+      --pad: 10px; --gap: 8px; --n: 5; --i: 0;
+      --cell: calc((100% - 2*var(--pad) - (var(--n) - 1)*var(--gap)) / var(--n));
+      position: relative;
+      display: grid; grid-template-columns: repeat(var(--n), 1fr); gap: var(--gap);
+      padding: var(--pad);
+      border: 1px solid var(--border); border-radius: var(--radius);
+      background: color-mix(in oklab, var(--surface) 92%, transparent);
+      box-shadow: var(--shadow);
+    }
+    .segmented .thumb{
+      position:absolute; top: var(--pad); bottom: var(--pad);
+      left: calc(var(--pad) + var(--i) * (var(--cell) + var(--gap)));
+      width: var(--cell);
+      border-radius: calc(var(--radius) - 4px);
+      background: color-mix(in oklab, var(--accent) 12%, var(--surface));
+      box-shadow: inset 0 0 0 1px var(--border);
+      transition: left .25s ease, width .25s ease, background .25s ease;
+    }
+    .segmented .seg-btn{
+      appearance:none; background:none; border:0; cursor:pointer;
+      padding:.6rem .8rem; font-weight:600; color:var(--muted);
+      border-radius:10px; position:relative; z-index:1; text-align:left;
+    }
+    .segmented .seg-btn[aria-selected="true"]{ color: var(--accent); }
+    .segmented .seg-btn:focus-visible{
+      outline:2px solid currentColor; outline-offset:2px; border-radius:10px;
+    }
+
+    /* Make chip-style focus work on buttons too */
+    .icon-link:focus-visible{
+      outline:2px solid currentColor; outline-offset: 2px; border-radius:8px;
+    }
+
+    /* Force WHITE theme regardless of system setting */
+    html[data-theme="light"]{
+      --bg: #f7f7fb;
+      --surface: #ffffff;
+      --text: #111318;
+      --muted: #5b5f6a;
+      --accent: #1772d0;
+      --accent-2: #f09228;
+      --border: rgba(17,19,24,.12);
+      --shadow: 0 1px 2px rgba(0,0,0,.04), 0 6px 20px rgba(0,0,0,.06);
+    }
+
+    .icon-link .ico,
+    .service-title .ico{
+      width:22px; height:22px; border-radius:6px; padding:3px;
+      display:inline-flex; align-items:center; justify-content:center;
+      box-shadow: inset 0 0 0 1px var(--border);
+    }
+
+    /* Keep SVGs crisp inside the bubbles */
+    .icon-link .ico svg,
+    .service-title .ico svg{ width:16px; height:16px; }
+
+    /* Brand bubbles for header/profile links */
+    .icon-link.icon-gmail .ico{ background:#EA4335; }        /* Gmail red */
+    .icon-link.icon-scholar .ico{ background:#1a73e8; }       /* Scholar blue */
+    .icon-link.icon-github .ico{ background:#24292f; }        /* GitHub black */
+    .icon-link.icon-cv .ico{ background:#7C3AED; }            /* CV purple */
+
+    .icon-link.icon-gmail .ico svg,
+    .icon-link.icon-scholar .ico svg,
+    .icon-link.icon-github .ico svg,
+    .icon-link.icon-cv .ico svg{ fill:#fff; }
+
+    /* Subtle text/border lift for colorful chips */
+    .icon-link{ border-color: color-mix(in oklab, currentColor 18%, transparent); }
+
+    /* Colorful service icons */
+    .service-title.reviewer .ico{
+      background: linear-gradient(135deg,#22c55e,#16a34a); /* green */
+    }
+    .service-title.ta .ico{
+      background: linear-gradient(135deg,#8b5cf6,#3b82f6); /* purple→blue */
+    }
+    .service-title .ico svg{ fill:#fff; }
+
+    /* ====== Design tokens ====== */
+    :root{
+      --bg: #f7f7fb;
+      --surface: #ffffff;
+      --text: #111318;
+      --muted: #5b5f6a;
+      --accent: #1772d0;
+      --accent-2: #f09228;
+      --border: rgba(17,19,24,.12);
+      --radius: 14px;
+      --shadow: 0 1px 2px rgba(0,0,0,.04), 0 6px 20px rgba(0,0,0,.06);
+      --maxw: 1100px;
+      --pad: 20px;
+    }
+
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg: #0d0f14;
+        --surface: #111419;
+        --text: #eef1f6;
+        --muted: #a7aab3;
+        --accent: #6fb0ff;
+        --accent-2: #ffb864;
+        --border: rgba(255,255,255,.14);
+        --shadow: none;
+      }
+    }
+
+    /* ====== Base ====== */
+    *{ box-sizing: border-box }
+    html,body{ height:100% }
+    body{
+      margin:0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 800px at 20% -10%, rgba(23,114,208,.06), transparent 60%),
+        radial-gradient(1200px 800px at 120% 10%, rgba(240,146,40,.06), transparent 60%),
+        var(--bg);
+    }
+
+    a{ color:var(--accent); text-decoration:none }
+    a:hover,a:focus{ color:var(--accent-2) }
+    a:focus-visible{ outline:2px solid currentColor; outline-offset: 2px; border-radius:8px }
+
+    img{ max-width:100%; display:block }
+
+    .container{
+      max-width: var(--maxw);
+      margin-inline:auto;
+      padding: clamp(16px, 2.5vw, 28px);
+    }
+
+    .section{
+      margin: clamp(24px, 4vw, 48px) 0;
+    }
+
+    .card{
+      background: color-mix(in oklab, var(--surface) 92%, transparent);
+      border:1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .chip{
+      display:inline-block; padding:.32rem .64rem;
+      border:1px solid var(--border);
+      border-radius:999px; line-height:1;
+      text-decoration:none; font-size:.95rem;
+      background: color-mix(in oklab, currentColor 6%, transparent);
+      color:inherit;
+    }
+
+    .badge{
+      display:inline-block; padding:.1rem .45rem; border:1px solid var(--border);
+      border-radius:999px; font-size:.8em; opacity:.9; margin-left:.35rem;
+    }
+
+    .h1{ font-size: clamp(28px, 4.5vw, 42px); line-height:1.1; margin:0 }
+    .h2{ font-size: clamp(20px, 3vw, 26px); margin:.2rem 0 1rem; }
+    .muted{ color:var(--muted) }
+
+    /* ====== Header / Hero ====== */
+    header .bar{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      padding: 10px 0 6px;
+    }
+
+    nav ul{
+      display:flex; gap:.4rem; flex-wrap:wrap; padding:0; margin:0; list-style:none;
+    }
+    nav a{
+      padding:.5rem .7rem; border-radius:10px; color:inherit;
+    }
+    nav a[aria-current="page"]{ background: color-mix(in oklab, currentColor 8%, transparent); }
+
+    .hero{
+      display:grid; gap:24px;
+      grid-template-columns: 1.2fr .6fr;
+      align-items:center;
+    }
+    @media (max-width: 860px){
+      .hero{ grid-template-columns: 1fr }
+    }
+
+    .portrait{
+      width: 260px; height:260px; border-radius:16px; overflow:hidden;
+      border:1px solid var(--border); background:#ddd; margin-left:auto;
+    }
+
+    .links{
+      display:flex; flex-wrap:wrap; gap:.5rem .7rem; margin-top:12px;
+    }
+    
+    .icon-link{
+      display:inline-flex; align-items:center; gap:.45rem;
+      padding:.45rem .7rem; border:1px solid var(--border);
+      border-radius:999px; background: color-mix(in oklab, currentColor 6%, transparent);
+      color:inherit; text-decoration:none;
+    }
+    .icon-link svg{ width:18px; height:18px; opacity:.85; flex:0 0 18px }
+
+    /* ====== Publications ====== */
+    .pub-list{ display:flex; flex-direction:column; gap:16px; margin:0; padding:0; list-style:none }
+    .pub{
+      display:grid; gap:18px; padding:16px;
+      grid-template-columns: 220px 1fr;
+    }
+    .pub-media{
+      aspect-ratio: 3/2; border-radius:10px; overflow:hidden; background:linear-gradient(180deg,#eee,#ddd);
+    }
+    .pub-media img{ width:100%; height:100%; object-fit:cover; transition: transform .25s ease }
+    .pub:hover .pub-media img{ transform: scale(1.03) }
+    .paper-title{ margin:.15rem 0 .35rem; font-size:1.05rem; line-height:1.35 }
+    .pub .links{ margin-top:.35rem }
+
+    @media (max-width: 700px){
+      .pub{ grid-template-columns: 1fr }
+      .pub-media{ aspect-ratio: 16 / 9 }
+    }
+
+    /* ====== Education ====== */
+    .edu-list{ display:flex; flex-direction:column; gap:12px; margin:0; padding:0; list-style:none }
+    .edu{
+      display:grid; gap:16px; padding:16px; align-items:center;
+      grid-template-columns: 110px 1fr;
+    }
+    .edu .logo{ width:84px; height:auto; border-radius:10px; border:1px solid var(--border) }
+    .edu h3{ margin:0 0 4px; font-size:1.05rem }
+    .edu .meta{ margin:.15rem 0; color:var(--muted) }
+    .edu .dates{ color:var(--muted) }
+
+    @media (max-width: 560px){ .edu{ grid-template-columns: 84px 1fr } }
+
+    /* ====== Service cards ====== */
+    .service-grid{
+      display:grid; gap:16px; grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 860px){ .service-grid{ grid-template-columns: 1fr } }
+
+    .service-card{ padding:16px }
+    .service-title{ display:flex; align-items:center; gap:.6rem; margin:0 0 .25rem; font-size:1.05rem }
+    .service-title svg{ width:18px; height:18px; opacity:.85 }
+    .service-list,.ta-list{ margin:.25rem 0 0; line-height:1.9; font-size:.98rem }
+
+    .ta-item{ margin:.25rem 0 }
+    .course{ font-weight:600 }
+
+    /* ====== Awards ====== */
+    .awards{ padding:16px }
+    .awards ul{ margin:0; padding-left:1.1rem }
+    .awards li{ margin:.35rem 0 }
+
+    /* ====== Utilities ====== */
+    .sr-only{
+      position:absolute !important; width:1px; height:1px; padding:0; margin:-1px;
+      overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+    }
+    .stack > * + *{ margin-top:.7rem }
+
+    @media (prefers-reduced-motion: reduce){
+      *{ transition:none !important; animation:none !important }
+    }
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+
+  <div class="container">
+    <header>
+      <aside id="scrollSpy" class="vnav card" aria-label="On-page sections">
+        <button class="vbtn" data-href="#about">About</button>
+        <button class="vbtn" data-href="#research">Research</button>
+        <button class="vbtn" data-href="#experience">Experience</button>
+        <button class="vbtn" data-href="#education">Education</button>
+        <button class="vbtn" data-href="#awards">Awards</button>
+        <span class="thumb" aria-hidden="true"></span>
+      </aside>
+
+      <div class="bar">
+        <div class="brand"><strong>Hany Hamed</strong></div>
+        <!-- <nav aria-label="Sections">
+          <ul>
+            <li><a href="#about" aria-current="page">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#awards">Awards</a></li>
+          </ul>
+        </nav> -->
+        <div class="segmented" id="sectionTabs" role="tablist" aria-label="Sections">
+          <button class="seg-btn" role="tab" aria-selected="true"  data-href="#about">About</button>
+          <button class="seg-btn" role="tab" data-href="#research">Research</button>
+          <button class="seg-btn" role="tab" data-href="#experience">Experience</button>
+          <button class="seg-btn" role="tab" data-href="#education">Education</button>
+          <button class="seg-btn" role="tab" data-href="#awards">Awards</button>
+          <span class="thumb" aria-hidden="true"></span>
+        </div>
+
+        <button id="themeToggle" class="icon-link" type="button" aria-pressed="false" title="Toggle white vs dark theme">
+          <span class="ico">
+            <!-- sun icon -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 5.5a1 1 0 0 1 1-1h0a1 1 0 1 1-2 0h0a1 1 0 0 1 1-1Zm0 16a1 1 0 0 1 1-1h0a1 1 0 1 1-2 0h0a1 1 0 0 1 1-1Zm8.5-8.5a1 1 0 0 1-1-1h0a1 1 0 1 1 2 0h0a1 1 0 0 1-1 1ZM4.5 12a1 1 0 0 1-1-1h0a1 1 0 1 1 2 0h0a1 1 0 0 1-1 1Zm11.78-5.28a1 1 0 0 1 1.41 0h0a1 1 0 1 1-1.41-1.41h0a1 1 0 0 1 0 1.41Zm-9.56 9.56a1 1 0 0 1 1.41 0h0a1 1 0 1 1-1.41 1.41h0a1 1 0 0 1 0-1.41Zm11.56 1.41a1 1 0 0 1-1.41 0h0a1 1 0 1 1 1.41-1.41h0a1 1 0 0 1 0 1.41ZM5.72 6.22a1 1 0 0 1 0-1.41h0A1 1 0 1 1 7.13 6.22h0a1 1 0 0 1-1.41 0ZM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"/>
+            </svg>
+          </span>
+          <span class="label">White theme</span>
+        </button>
+
+
+      </div>
+
+      <section id="about" class="hero section">
+        <div class="stack">
+          <h1 class="h1">Hany Hamed</h1>
+          <p class="muted">
+            I am a reinforcement learning researcher focused on making RL agents
+            <strong>generalize</strong> and <strong>adapt</strong> to unseen, diverse settings.
+            <!-- Researching generalization in reinforcement learning to build agents that adapt robustly to unseen, diverse settings -->
+          </p>
+          <p class="muted">
+            My recent work covers model-based and hierarchical RL, offline RL, and sim-to-real—developing world models for planning, policies that generalize to new tasks, and agents that keep learning after deployment.
+          </p>
+          <p class="muted">
+            I earned my M.S. in Computer Science from KAIST in 2024, after a B.S. in Computer Science from Innopolis University.
+            
+            <!-- policies robust to dynamics shifts -->
+            <!-- Lately I am exploring open-ended, continual learning, unsupervised objectives, and causal structure to move beyond
+            benchmark chasing toward reliable embodied intelligence.  -->
+            <!-- If you’re working on similar problems—or want to collaborate on robots that actually work outside the lab—let’s talk. -->
+          </p>
+
+          <div class="links" aria-label="Contact & profiles">
+            <a class="icon-link icon-gmail" href="mailto:h.hamed.elanwar@gmail.com" aria-label="Email Gmail: h.hamed.elanwar@gmail.com">
+              <span class="ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M2 5.75A2.75 2.75 0 0 1 4.75 3h14.5A2.75 2.75 0 0 1 22 5.75v12.5A2.75 2.75 0 0 1 19.25 21H4.75A2.75 2.75 0 0 1 2 18.25V5.75Zm2.2-.25 7.8 5.44 7.8-5.44H4.2Zm15.8 2.04-7.53 5.26a1 1 0 0 1-1.14 0L3.8 7.54v10.71c0 .69.56 1.25 1.25 1.25h13.9c.69 0 1.25-.56 1.25-1.25V7.54Z"/>
+                </svg>
+              </span>
+              <span>Email <span class="badge">Gmail</span></span>
+            </a>
+
+            <a class="icon-link icon-cv" href="./files/cv/cv.pdf" target="_blank" rel="noopener" aria-label="Open CV (PDF)">
+              <span class="ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 2.75A2.75 2.75 0 0 1 8.75 0h6.19c.5 0 .98.2 1.33.55l3.18 3.18c.35.35.55.83.55 1.33V21.25A2.75 2.75 0 0 1 17.25 24H6.75A2.75 2.75 0 0 1 4 21.25V2.75A2.75 2.75 0 0 1 6.75 0H6Zm8.5 1.5V5a1 1 0 0 0 1 1h2.75L14.5 2.25ZM7.5 11h9v1.5h-9V11Zm0 3.5h9V16h-9v-1.5Zm0-7h6V9h-6V7.5Z"/>
+                </svg>
+              </span>
+              <span>CV</span>
+            </a>
+
+            <a class="icon-link icon-scholar" href="https://scholar.google.com/citations?user=J5ogYwsAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar profile">
+              <span class="ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2 1 7l11 5 8.5-3.86V15H22V7L12 2Zm-6 9.61v3.64c0 .62 2.69 2.25 6 2.25s6-1.63 6-2.25v-3.64l-6 2.73-6-2.73Z"/>
+                </svg>
+              </span>
+              <span>Google Scholar</span>
+            </a>
+
+            <a class="icon-link icon-github" href="https://github.com/hany606/" target="_blank" rel="noopener" aria-label="GitHub profile">
+              <span class="ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 .5A11.5 11.5 0 0 0 .5 12.38c0 5.26 3.39 9.72 8.1 11.3.6.1.82-.27.82-.58v-2.1c-3.3.74-4-1.42-4-1.42-.55-1.41-1.35-1.78-1.35-1.78-1.1-.77.08-.75.08-.75 1.22.09 1.86 1.27 1.86 1.27 1.08 1.9 2.84 1.35 3.54 1.03.11-.8.42-1.35.76-1.66-2.64-.31-5.42-1.36-5.42-6.07 0-1.34.46-2.43 1.23-3.29-.12-.3-.53-1.56.12-3.26 0 0 1-.33 3.3 1.25a11.4 11.4 0 0 1 6 0c2.3-1.58 3.3-1.25 3.3-1.25.65 1.7.24 2.96.12 3.26.77.86 1.23 1.95 1.23 3.29 0 4.72-2.79 5.75-5.44 6.06.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.83.58A11.5 11.5 0 0 0 23.5 12.38C23.5 5.93 18.45.5 12 .5Z"/>
+                </svg>
+              </span>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+        <div class="portrait card">
+          <img src="./files/photos/photo.jpg" alt="Portrait of Hany Hamed">
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <!-- ===== Research ===== -->
+      <section id="research" class="section">
+        <h2 class="h2">Selected Research</h2>
+        <p class="muted">Full list available on <a href="https://scholar.google.com/citations?user=J5ogYwsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>. <br>*Equal Contribution</p>
+
+        <ol class="pub-list">
+          <!-- Extendable Planning via Multiscale Diffusion -->
+          <li class="card pub" itemscope itemtype="https://schema.org/ScholarlyArticle">
+            <figure class="pub-media">
+              <img src="./files/papers/imgs/hmd.png" alt="Extendable Planning via Multiscale Diffusion — thumbnail" loading="lazy" width="420" height="280">
+            </figure>
+            <div>
+              <h3 class="paper-title" itemprop="name">Extendable Planning via Multiscale Diffusion</h3>
+              <p class="muted" itemprop="author">
+                Chang Chen*, <strong>Hany Hamed</strong>*, Doojin Baek, Taegu Kang, Yoshua Bengio, Sungjin Ahn.
+              </p>
+              <p class="muted">Submitted to AAAI <time datetime="2026">2026</time></p>
+              <div class="links" aria-label="Links">
+                <a class="chip" href="./files/papers/bibtex/hmd.bib" target="_blank" rel="noopener">bibtex</a>
+                <a class="chip" href="https://arxiv.org/abs/2503.20102" target="_blank" rel="noopener">arXiv</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Dr. Strategy -->
+          <li class="card pub" itemscope itemtype="https://schema.org/ScholarlyArticle">
+            <figure class="pub-media">
+              <img src="./files/papers/imgs/drstrategy.png" alt="Dr. Strategy — Model-Based Generalist Agents with Strategic Dreaming — thumbnail" loading="lazy" width="420" height="280">
+            </figure>
+            <div>
+              <h3 class="paper-title" itemprop="name">Dr. Strategy: Model-Based Generalist Agents with Strategic Dreaming</h3>
+              <p class="muted" itemprop="author"><strong>Hany Hamed</strong>*, Subin Kim*, Dongyeong Kim, Jaesik Yoon, Sungjin Ahn.</p>
+              <p class="muted">ICML <time datetime="2024">2024</time></p>
+              <div class="links" aria-label="Links">
+                <a class="chip" href="https://openreview.net/forum?id=HsseRq2FAx" target="_blank" rel="noopener">conference paper</a>
+                <a class="chip" href="./files/papers/bibtex/drstrategy.bib" target="_blank" rel="noopener">bibtex</a>
+                <a class="chip" href="https://arxiv.org/abs/2402.18866" target="_blank" rel="noopener">arXiv</a>
+                <a class="chip" href="https://github.com/ahn-ml/drstrategy" target="_blank" rel="noopener">code</a>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ===== Research ===== -->
+      <section id="experience" class="section">
+        <h2 class="h2">Research Experience</h2>
+        <ul class="edu-list">
+
+          <li class="card edu">
+            <img class="logo" src="files/images/iit.png" alt="IIT Genoa logo" loading="lazy" width="100" height="100">
+            <div>
+              <h3><a href="https://ami.iit.it/">Artificial and Mechanical Intelligence Lab</a>, IIT Genoa, Italy</h3>
+              <div class="meta">Research Fellow · PI: Prof. Daniele Pucci &nbsp;·&nbsp; co-PI: Giulio Romualdi & Giuseppe L’Erario</div>
+              <div class="dates"><time datetime="2025-03">Mar 2025</time> — Present</div>
+              <ul class="service-list">
+                <li>Working on torque-control humanoid locomotion using reinforcement learning.</li>
+                <li>Developing RL experiments for ErgoCub using IsaacLab.</li>
+                <li>Working on a Sim2Real transfer framework.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="card edu">
+            <img class="logo" src="files/images/uofa.png" alt="University of Alberta logo" loading="lazy" width="100" height="100">
+            <div>
+              <h3><a href="https://www.ualberta.ca/">University of Alberta</a> & <a href="https://www.amii.ca/">Amii</a> (Remote)</h3>
+              <div class="meta">Research Assistant · PI: Prof. Rupam Mahmood (UoA) &nbsp;·&nbsp; Colin Bellinger (NRC)</div>
+              <div class="dates"><time datetime="2024-11">Nov 2024</time> — Present</div>
+              <ul class="service-list">
+                <li>Working on model-based RL for Sim2Real of robotics manipulation tasks.</li>
+                <li>Assisted in research for mask-based goal representation for robot learning. (In Submission: [J3])</li>
+                <li>Investigated TD-MPC2 and SAC for Sim-to-Sim transfer with finetuning in the target domain.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="card edu">
+            <img class="logo" src="files/images/kaist.jpeg" alt="KAIST logo" loading="lazy" width="100" height="100">
+            <div>
+              <h3><a href="https://mlml.kaist.ac.kr/">Machine Learning & Mind Lab</a>, KAIST, Daejeon, South Korea</h3>
+              <div class="meta">Graduate Student Research Assistant · PI: Prof. Sungjin Ahn</div>
+              <div class="dates"><time datetime="2022-11">Nov 2022</time> — <time datetime="2025-02">Feb 2025</time></div>
+              <ul class="service-list">
+                <li>Worked on zero-shot task generalization for model-based RL (Publication: [C2] Dr. Strategy).</li>
+                <li>Worked on intrinsic motivation for hierarchical model-based RL agents.</li>
+                <li>Worked on diffusion-based planning for long-horizon tasks (In Submission: [P1] HMD).</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="card edu">
+            <img class="logo" src="files/images/iu.png" alt="Innopolis University logo" loading="lazy" width="90" height="90">
+            <div>
+              <h3><a href="https://innopolis.university/en/">Unmanned Technology Laboratory</a>, Innopolis University, Russia</h3>
+              <div class="meta">Junior Developer (Industry Oriented)</div>
+              <div class="dates"><time datetime="2021-06">Jun 2021</time> — <time datetime="2022-06">Jun 2022</time></div>
+              <ul class="service-list">
+                <li>Developed ROS packages for drone modules including gimbal control, RTK GPS, and payload control.</li>
+                <li>Integrated Livox lidar with lab’s drone for outdoor mapping.</li>
+                <li>Developed a handheld Lidar device for indoor/outdoor mapping for an industrial partner.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="card edu">
+            <img class="logo" src="files/images/iu.png" alt="Innopolis University logo" loading="lazy" width="90" height="90">
+            <div>
+              <h3><a href="https://innopolis.university/en/">Center of Robotics</a>, Innopolis University, Russia</h3>
+              <div class="meta">Undergraduate Research Assistant · PI: Prof. Sergei Savin</div>
+              <div class="dates"><time datetime="2019-08">Aug 2019</time> — <time datetime="2021-04">Apr 2021</time></div>
+              <ul class="service-list">
+                <li>Conducted RL experiments for a stabilizing control policy of a tensegrity hopper (Publication: [C1]).</li>
+                <li>Designed and implemented a contactless differentiable physics simulator for tensegrity robots using Taichi.</li>
+                <li>Performed research on sim2real transfer for a three-prism tensegrity robot.</li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <!-- ===== Education ===== -->
+      <section id="education" class="section">
+        <h2 class="h2">Education</h2>
+        <ul class="edu-list">
+          <li class="card edu">
+            <img class="logo" src="files/images/kaist.jpeg" alt="KAIST logo" loading="lazy" width="100" height="100">
+            <div>
+              <h3><a href="https://cs.kaist.ac.kr/">School of Computing</a>, KAIST</h3>
+              <div class="meta">M.S. student · Advised by Prof. <a href="https://mlml.kaist.ac.kr/sungjinahn/">Sungjin Ahn</a></div>
+              <div class="dates"><time datetime="2022">2022</time>–<time datetime="2024">2024</time></div>
+            </div>
+          </li>
+
+          <li class="card edu">
+            <img class="logo" src="files/images/iu.png" alt="Innopolis University logo" loading="lazy" width="80" height="80">
+            <div>
+              <h3><a href="https://innopolis.university/en/">Computer Science (Robotics Major)</a>, Innopolis University</h3>
+              <div class="meta">Undergraduate student</div>
+              <div class="dates"><time datetime="2017">2017</time>–<time datetime="2022">2022</time></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+      
+      <!-- ===== Service ===== -->
+      <section id="service" class="section">
+        <h2 class="h2">Service</h2>
+
+        <div class="service-grid">
+          <!-- Reviewer -->
+          <div class="card service-card">
+            <!-- Reviewer -->
+            <h3 class="service-title reviewer">
+              <span class="ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 2h6a2 2 0 0 1 2 2h1.5A1.5 1.5 0 0 1 20 5.5v14A2.5 2.5 0 0 1 17.5 22h-11A2.5 2.5 0 0 1 4 19.5v-14A1.5 1.5 0 0 1 5.5 4H7a2 2 0 0 1 2-2Zm0 2v1h6V4H9Zm2.2 10.9 4.2-4.2-1.1-1.1-3.1 3.1-1.6-1.6-1.1 1.1 2.7 2.7Z"/>
+                </svg>
+              </span>
+              Reviewer
+            </h3>
+            <ul class="service-list">
+              <li>
+                <strong>Conferences:</strong>
+                ICLR <span class="badge">2024, 2025</span>,
+                IROS <span class="badge">2024</span>,
+                ACML <span class="badge">2024</span>,
+                Humanoids <span class="badge">2025</span>,
+                AAAI <span class="badge">2026</span>
+              </li>
+              <li>
+                <strong>Workshops:</strong>
+                ICML AutoRL <span class="badge">2024</span>
+              </li>
+              <li>
+                <strong>Journals:</strong>
+                IEEE RA-L <span class="badge">2024</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Teaching Assistant -->
+          <div class="card service-card">
+            <!-- Teaching Assistant -->
+            <h3 class="service-title ta">
+              <span class="ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2 2 7l10 5 10-5-10-5Zm-7 9v4c0 .75 3.13 2.5 7 2.5s7-1.75 7-2.5v-4l-7 3.5L5 11Z"/>
+                </svg>
+              </span>
+              Teaching Assistant
+            </h3>
+            <ul class="ta-list">
+              <li class="ta-item">
+                <div class="course">CS492: Deep Reinforcement Learning</div>
+                <div class="meta">with <a href="https://mlml.kaist.ac.kr/sungjinahn/">Prof. Sungjin Ahn</a> · <time datetime="2023-03">Spring 2023</time></div>
+              </li>
+              <li class="ta-item">
+                <div class="course">Introduction to ROS</div>
+                <div class="meta">with Dr. Geesara Kulathunga · <time datetime="2022-06">Summer 2022</time></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Awards ===== -->
+      <section id="awards" class="section">
+        <h2 class="h2">Awards</h2>
+        <div class="card awards">
+          <ul>
+            <li><span class="badge">2024</span> – ICML Travel Grant</li>
+            <li><span class="badge">2022–2024</span> – KAIST Graduate School Full Scholarship (Master’s)</li>
+            <li><span class="badge">Fall 2020</span> – Outstanding Achievements, Innopolis University</li>
+            <li><span class="badge">2020, 2021</span> – Outstanding Contribution to Science, Innopolis University</li>
+            <li><span class="badge">June 2021</span> – 3rd Place, DOTS Competition (Bristol Robotics Lab & Toshiba)</li>
+            <li><span class="badge">2018–2022</span> – Innopolis University Full Scholarship (Bachelor’s)</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+<script>
+(function () {
+  const root = document.documentElement;
+  const btn  = document.getElementById('themeToggle');
+  const KEY  = 'theme-mode'; // 'light' or 'auto'
+
+  function apply(mode){
+    if(mode === 'light'){
+      root.setAttribute('data-theme','light');
+      btn.setAttribute('aria-pressed','true');
+      btn.querySelector('.label').textContent = 'Use Dark theme';
+      btn.title = 'Revert to your Dark theme';
+    } else {
+      root.removeAttribute('data-theme');
+      btn.setAttribute('aria-pressed','false');
+      btn.querySelector('.label').textContent = 'White theme';
+      btn.title = 'Force white theme';
+    }
+  }
+
+  const saved = localStorage.getItem(KEY) || 'auto';
+  apply(saved);
+
+  btn.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'light' ? 'auto' : 'light';
+    localStorage.setItem(KEY, next);
+    apply(next);
+  });
+})();
+</script>
+<script>
+(() => {
+  const wrap = document.getElementById('sectionTabs');
+  const tabs = Array.from(wrap.querySelectorAll('.seg-btn'));
+  const setIndex = (i) => {
+    wrap.style.setProperty('--n', tabs.length);
+    wrap.style.setProperty('--i', i);
+    tabs.forEach((b, k) => b.setAttribute('aria-selected', k === i ? 'true' : 'false'));
+  };
+  tabs.forEach((btn, i) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      setIndex(i);
+      const el = document.querySelector(btn.dataset.href);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', btn.dataset.href);
+    });
+    btn.addEventListener('keydown', (ev) => {
+      let j = i;
+      if (ev.key === 'ArrowRight') j = (i + 1) % tabs.length;
+      if (ev.key === 'ArrowLeft')  j = (i - 1 + tabs.length) % tabs.length;
+      if (j !== i){ tabs[j].focus(); setIndex(j); }
+    });
+  });
+  // init from URL hash
+  const idx = tabs.findIndex(b => b.dataset.href === location.hash);
+  setIndex(idx > -1 ? idx : 0);
+})();
+</script>
+<script>
+(() => {
+  // Sections (ensure IDs are unique: #about #research #experience #education #awards)
+  const items = [
+    { id: '#about'      },
+    { id: '#research'   },
+    { id: '#experience' },
+    { id: '#education'  },
+    { id: '#awards'     },
+  ];
+
+  const nav   = document.getElementById('scrollSpy');
+  const btns  = Array.from(nav.querySelectorAll('.vbtn'));
+  const thumb = nav.querySelector('.thumb');
+
+  // Click -> smooth scroll + update state
+  btns.forEach((b, i) => {
+    b.addEventListener('click', (e) => {
+      e.preventDefault();
+      const el = document.querySelector(b.dataset.href);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', b.dataset.href);
+      setActive(i);
+    });
+  });
+
+  // Position the thumb to a given button
+  function moveThumbToButton(btn){
+    const navBox = nav.getBoundingClientRect();
+    const box    = btn.getBoundingClientRect();
+    const top    = box.top - navBox.top + nav.scrollTop - 4;  // padding tweak
+    const h      = box.height + 8;
+    nav.style.setProperty('--thumb-top', `${top}px`);
+    nav.style.setProperty('--thumb-h',   `${h}px`);
+  }
+
+  function setActive(i){
+    btns.forEach((b,k) => b.setAttribute('aria-current', k === i ? 'true' : 'false'));
+    moveThumbToButton(btns[i]);
+  }
+
+  // Scroll-spy with IntersectionObserver
+  const idToIndex = Object.fromEntries(items.map((it, i) => [it.id, i]));
+  const io = new IntersectionObserver((entries) => {
+    // Pick the entry most centered in the viewport
+    let best = null, bestScore = -Infinity;
+    const mid = window.innerHeight / 2;
+    for (const e of entries){
+      if (!e.isIntersecting) continue;
+      const rect = e.target.getBoundingClientRect();
+      const center = rect.top + rect.height/2;
+      const score = -Math.abs(center - mid); // closer to center = better
+      if (score > bestScore){ bestScore = score; best = e; }
+    }
+    if (best){
+      const i = idToIndex['#' + best.target.id];
+      if (typeof i === 'number') setActive(i);
+    }
+  }, { root: null, threshold: [0, .1, .5, 1], rootMargin: "-40% 0% -40% 0%" });
+
+  // Observe sections
+  items.forEach(it => {
+    const el = document.querySelector(it.id);
+    if (el) io.observe(el);
+  });
+
+  // Init from URL hash or first
+  const startIdx = idToIndex[location.hash] ?? 0;
+  setActive(startIdx);
+
+  // Keep thumb aligned on resize
+  window.addEventListener('resize', () => {
+    const i = btns.findIndex(b => b.getAttribute('aria-current') === 'true');
+    if (i >= 0) moveThumbToButton(btns[i]);
+  });
+})();
+</script>
+
+</body>
+</html>
