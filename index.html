@@ -240,8 +240,20 @@
     }
 
     .portrait{
-      width: 260px; height:260px; border-radius:16px; overflow:hidden;
-      border:1px solid var(--border); background:#ddd; margin-left:auto;
+      width: 260px;
+      height: 260px;            /* keep it square */
+      border-radius: 50%;       /* <- makes it round */
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #ddd;
+      margin-left: auto;
+    }
+
+    .portrait img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;        /* crop to fill the circle nicely */
+      display: block;
     }
 
     .links{
@@ -433,7 +445,7 @@
           </div>
         </div>
         <div class="portrait card">
-          <img src="./files/photos/photo.jpg" alt="Portrait of Hany Hamed">
+          <img src="./files/images/personal.png" alt="Portrait of Hany Hamed">
         </div>
       </section>
     </header>
